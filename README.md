@@ -29,7 +29,7 @@ As of version 0.1, one can only make text posts. More features, including but no
 To make a text post without a title:
 `$ tumblr -t "My post"`
 For a text post with a title:
-`$ tumblr -tt "My post"
+`$ tumblr -tt "My post"`
 
 ## Credit
 
