@@ -1,0 +1,3 @@
+[console_scripts]
+tumblr = tumblr_terminal.command_line:main
+
