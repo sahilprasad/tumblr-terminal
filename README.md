@@ -27,13 +27,18 @@ As of version 0.1, one can only make text posts. More features, including but no
 ## Examples
 
 To make a text post without a title:
-`$ tumblr -t "My post"`
+```
+$ tumblr -t "My post"
+```
+
 For a text post with a title:
-`$ tumblr -tt "My post"`
+```
+$ tumblr -tt "My post"
+```
 
 ## Credit
 
-The `interactive_console.py` module is a modified version of the file in Tumblr's official Python client, found here: https://github.com/tumblr/pytumblr. Please read their LICENSE for more information regarding distribution and usage.
+The `interactive_console.py` module is a modified version of the file in Tumblr's official Python client, found [here](https://github.com/tumblr/pytumblr). Please read their [LICENSE](https://github.com/tumblr/pytumblr/LICENSE) for more information regarding distribution and usage.
 
 ## Contact
 
