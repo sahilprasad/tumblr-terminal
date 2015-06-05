@@ -23,17 +23,21 @@ client = pytumblr.TumblrRestClient(
 
 blog_url = client.info()['user']['name']
 
-def make_text_post(state=None, title=None, body=None):
+def make_text_post(state=None, title=None, body=None, tags=None):
 	if body == None:
 		print('Text post body missing, dawg.')
 	else:
 		if state == None:
-			state = "draft"
-		if title != None:
-			client.create_text(blog_url, state=state, title=title, body=body)
-		else:
-			client.create_text(blog_url, state=state, body=body)
+			state = "published"
+		if tags == None:
+			tags = [] 
 
-		print('Text post %s to %s!' % (state, blog_url))
+		client.create_text(blog_url, state=state, title=title, body=body, tags=tags)
+		if state == "draft":
+			print('Text post added to drafts of %s' % blog_url)
+		elif state == "queue":
+			print('Text post added to queue of %s' % blog_url)
+		else:
+			print('Text post %s to %s!' % (state, blog_url))
 
 
