@@ -55,7 +55,7 @@ MMMMMMMMMMMMMMMMMMMMM.                             MMMMMMMMMMMMMMMMMMMMM
 				title = None
 				if len(args) == 4 and (args[2] == '--tags' or args[2] == '-tags'):
 					tags = args[3]
-					tags = args.split(",")
+					tags = tags.split(",")
 
 				if args[0] == '-dt' or args[0] == '-dtt':
 					state = "draft"

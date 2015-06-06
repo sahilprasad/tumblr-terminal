@@ -32,9 +32,13 @@ def make_text_post(state=None, title=None, body=None, tags=None):
 		if tags == None:
 			tags = [] 
 
+		if title == None:
+			title = ""
+
 		client.create_text(blog_url, state=state, title=title, body=body, tags=tags)
+
 		if state == "draft":
-			print('Text post added to drafts of %s' % blog_url)
+			print('Text post added to the drafts of %s' % blog_url)
 		elif state == "queue":
 			print('Text post added to queue of %s' % blog_url)
 		else:
