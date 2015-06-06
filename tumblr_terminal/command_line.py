@@ -72,7 +72,7 @@ MMMMMMMMMMMMMMMMMMMMM.                             MMMMMMMMMMMMMMMMMMMMM
 
 		except ValueError:
 			print(Fore.RED + 'ERROR' + Fore.RESET + ' : Invalid input detected.')
-			print('Type '+ Fore.BLUE + 'tumblr ' + Fore.RESET + 'or' + Fore.BLUE +
+			print('Type '+ Fore.BLUE + 'tumblr' + Fore.RESET + 'or' + Fore.BLUE +
 			 ' tumblr --usage' + Fore.RESET + ' for help.')
 	
 

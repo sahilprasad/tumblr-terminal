@@ -1,6 +1,6 @@
-import yaml 
-import os 
-import sys 
+import yaml
+import os
+import sys
 import pytumblr
 from interactive_console import new_oauth as auth
 
@@ -11,9 +11,9 @@ if not os.path.exists(yaml_path):
 else:
 	yaml_file = open(yaml_path, "r")
 	tokens = yaml.safe_load(yaml_file)
-	yaml_file.close() 
+	yaml_file.close()
 
-# creating client to interact with 
+# creating client to interact with
 client = pytumblr.TumblrRestClient(
 	tokens['consumer_key'],
 	tokens['consumer_secret'],
@@ -39,5 +39,3 @@ def make_text_post(state=None, title=None, body=None, tags=None):
 			print('Text post added to queue of %s' % blog_url)
 		else:
 			print('Text post %s to %s!' % (state, blog_url))
-
-
