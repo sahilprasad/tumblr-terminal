@@ -21,23 +21,7 @@ def main():
 
 	if args == []:
 		print('TUMBLR_TERMINAL developed by Sahil Prasad.')
-		print("""
-MMMMMMMMMMMMMMMMMMMMM.                             MMMMMMMMMMMMMMMMMMMMM
- `MMMMMMMMMMMMMMMMMMMM           M\  /M           MMMMMMMMMMMMMMMMMMMM'
-   `MMMMMMMMMMMMMMMMMMM          MMMMMM          MMMMMMMMMMMMMMMMMMM'  
-     MMMMMMMMMMMMMMMMMMM-_______MMMMMMMM_______-MMMMMMMMMMMMMMMMMMM    
-      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    
-      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    
-      MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM    
-     .MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM.    
-    MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM  
-                   `MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM'                
-                          `MMMMMMMMMMMMMMMMMM'                    
-                              `MMMMMMMMMM'                              
-                                 MMMMMM                          
-                                  MMMM                                  
-                                   MM     
-			""")
+		print("Try 'tumblr --usage' for instructions.")
 	else:
 		try:
 
@@ -72,7 +56,7 @@ MMMMMMMMMMMMMMMMMMMMM.                             MMMMMMMMMMMMMMMMMMMMM
 
 		except ValueError:
 			print(Fore.RED + 'ERROR' + Fore.RESET + ' : Invalid input detected.')
-			print('Type '+ Fore.BLUE + 'tumblr' + Fore.RESET + 'or' + Fore.BLUE +
+			print('Type '+ Fore.BLUE + 'tumblr' + Fore.RESET + 'or ' + Fore.BLUE +
 			 ' tumblr --usage' + Fore.RESET + ' for help.')
 	
 
