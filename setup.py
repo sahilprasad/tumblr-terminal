@@ -7,7 +7,7 @@ def readme():
         return f.read() 
 
 setup(name='tumblr_terminal',
-      version='0.1',
+      version='0.2',
       description='Just another way for you to feed your Tumblr addiction.',
       long_description=readme(),
       url='http://github.com/sahilprasad/tumblr-terminal',
