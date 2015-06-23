@@ -36,6 +36,18 @@ For a text post with a title:
 $ tumblr -tt "My post"
 ```
 
+To make a text post with tags:
+```
+$ tumblr -t "My post" --tags "tag1, tag2, tag3..."
+```
+
+Now, you can specify whether your post is published, saved as a draft, or put on your queue:
+
+To publish a text post: `-t` or `-pt`
+To save a text post as a draft: `-dt`
+And, to queue a text post: `-qt`
+
+Use `tumblr --usage` for a reference to some of the commands.
 ## Credit
 
 The `interactive_console.py` module is a modified version of the file in Tumblr's official Python client, found [here](https://github.com/tumblr/pytumblr). Please read their [LICENSE](https://github.com/tumblr/pytumblr/LICENSE) for more information regarding distribution and usage.
