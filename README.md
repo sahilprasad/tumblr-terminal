@@ -18,7 +18,7 @@ If everything went smoothly, when you start up your terminal and type `tumblr`, 
 
 Go through the link, and you will be asked to allow the application to access your information. Allow it, then copy the redirect URL and paste it into the terminal as instructed.
 
-After following the instructions, restart your terminal and type `tumblr` again. If all went well, you should see a Batman logo that I may or may not get into legal trouble for. Congrats!
+After following the instructions, restart your terminal and type `tumblr` or `tumblr --usage`. If all went well, you should not be met with an infuriating traceback for some error or another. Awesome!
 
 ## Features
 
