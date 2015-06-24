@@ -12,4 +12,5 @@
 /*.egg
 
 # Other types of logged data that may have been generated 
-*.log 
+*.log
+*.txt 
