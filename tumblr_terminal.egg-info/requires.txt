@@ -1,3 +1,0 @@
-pytumblr
-pyyaml
-colorama
