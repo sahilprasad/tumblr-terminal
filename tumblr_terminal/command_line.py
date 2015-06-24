@@ -1,12 +1,9 @@
 import tumblr_terminal as t 
-from colorama import init, Fore, deinit
 import sys 
-
-init() 
 
 def usage():
 	print('')
-	print(Fore.BLUE + 'TEXT POSTS' + Fore.RESET)
+	print('TEXT POSTS')
 	print('	To make a regular text post: ')
 	print('		$ tumblr -t "[post body]"')
 	print('	To make a text post with a title: ')
@@ -20,7 +17,7 @@ def main():
 	args = sys.argv[1:]
 
 	if args == []:
-		print('TUMBLR_TERMINAL developed by Sahil Prasad.')
+		print('TUMBLR_TERMINAL. Developed by Sahil Prasad.')
 		print("Try 'tumblr --usage' for instructions.")
 	else:
 		try:
@@ -55,9 +52,6 @@ def main():
 
 
 		except ValueError:
-			print(Fore.RED + 'ERROR' + Fore.RESET + ' : Invalid input detected.')
-			print('Type '+ Fore.BLUE + 'tumblr' + Fore.RESET + 'or ' + Fore.BLUE +
-			 ' tumblr --usage' + Fore.RESET + ' for help.')
+			print('Error: Invalid input detected.')
+			print("Type tumblr --usage for more information or consult the README.")
 	
-
-deinit()
